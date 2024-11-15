@@ -24,17 +24,17 @@ int main()
     {
         cout << array[i] << " ";
     }
-    cout << "Enter index where you want to add element: ";
+    cout << "\nEnter index where you want to add element: ";
     cin >> index;
-    cout << "Enter element you want to add element: ";
+    cout << "Enter element you want to add: ";
     cin >> element;
-    for (int i = size; i > index; i--)
+    for (int i = size + 1; i >= index; i--)
     {
         array[i] = array[i - 1];
     }
     array[index] = element;
     cout << "Array after insertion\n";
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size + 1; i++)
     {
         cout << array[i] << " ";
     }
